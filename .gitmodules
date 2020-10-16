@@ -1,0 +1,3 @@
+[submodule "medical"]
+	path = medical
+	url = https://github.com/lakshmangiri/medical.git
