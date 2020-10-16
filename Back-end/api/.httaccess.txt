@@ -1,0 +1,14 @@
+#Remove the php extensin from the file
+Rwrite Engine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+#set the heder restful api
+Header always set Access-Content-Allow-Origin http://localhost:4200
+Header always set Access-Control-Max-Age "1000"
+Header always set Access-Control-Allow-Headers "X-Requested-with, Content-Type, Orgin, Authorization,
+Header always set Access-Control-Allow-Origin  "*"
+Header always set Access-Control-Allow-Headers "Orgin, X-Requested-with, Content-Type,
+Access-Control-Allow-Origin"
+Header always set Access-Control-Allow-Methods "PUT,GET,POST,DELETE,OPTIONS"
